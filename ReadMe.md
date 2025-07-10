@@ -3,7 +3,7 @@ Ask the Game is an interactive application that uses Google's Gemini 2.5 Flash m
 
 Built with HTML, CSS, and JavaScript, it serves as a conversational AI assitant tailored to each sport's unique context - from historical stats to current season news. 
 
-Live Demo: <a href="askthegame.netlify.app">Ask the Game</a>
+Live Demo: <a href="https://askthegame.netlify.app">Ask the Game</a>
 
 ## 🚀 Features
 - **🧠 AI-Powered Q&A**: Asks dynamic, up-to-date questions to Google's Gemini model using a custom-built prompt system for each sport.
