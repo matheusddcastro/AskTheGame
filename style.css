@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1d;
+}
+
+body, :root {
+    font-family: "Poppins", sans-serif;
+    line-height: 0.9;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+
+main {
+    max-width: 36rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+section {
+    background-image: linear-gradient(90deg, #efd3b6 0%, #efb67c 50%, #ef9942 100%);
+    border-radius: 0.5rem;
+    padding-top: 4px;
+}
+
+main section {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: appear 700ms forwards;
+}
+
+.container {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 0.3rem;
+    background-color: #1c1c1d;
+}
+
+.container h2 {
+    letter-spacing: -0.4px;
+    color: #fff;
+}
+
+.container p {
+    letter-spacing: -0.15px;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 1.25rem 0;
+}
+
+input, select {
+    all: unset;
+    border: 2px solid #ef9942;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #1c1c1d;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    background-image: linear-gradient(90deg, #efd3b6 0%, #efb67c 50%, #ef9942 100%);
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(184, 148, 18, 0.8);
+}
+
+button:disabled {
+    transition: none;
+    transform: initial;
+    box-shadow: initial;
+    cursor: not-allowed;
+    color: black;
+}
+
+.loading {
+    animation: pulse 2s infinite;
+}
+
+#aiResponse {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #efb67c;
+}
+
+#aiResponse ul {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+#aiResponse ol {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+#aiResponse li {
+    margin: 0.5rem auto;
+    color: #fff;
+}
+
+#aiResponse p {
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+} 
+
+/* Animation */
+@keyframes appear {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}
